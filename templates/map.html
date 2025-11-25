@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_08147524b7a468e5687f6dcdbf2d41fe {
+                #map_6b4d054e3ac2b360331f246937ba2d62 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,7 +54,7 @@
 <body>
     
     
-            <div class="folium-map" id="map_08147524b7a468e5687f6dcdbf2d41fe" ></div>
+            <div class="folium-map" id="map_6b4d054e3ac2b360331f246937ba2d62" ></div>
         
     
         <div style="
@@ -69,8 +69,9 @@
             font-size: 13px;
             box-shadow: 0 0 4px rgba(0,0,0,0.3);
         ">
-            Aviões com posição: 9<br>
-            Total no JSON: 22
+            Aviões com posição: 2<br>
+            Total no JSON: 8<br>
+            Última atualização: 10:23:15 UTC
         </div>
         
     
@@ -84,8 +85,8 @@
 <script>
     
     
-            var map_08147524b7a468e5687f6dcdbf2d41fe = L.map(
-                "map_08147524b7a468e5687f6dcdbf2d41fe",
+            var map_6b4d054e3ac2b360331f246937ba2d62 = L.map(
+                "map_6b4d054e3ac2b360331f246937ba2d62",
                 {
                     center: [41.1579, -8.6291],
                     crs: L.CRS.EPSG3857,
@@ -102,7 +103,7 @@
 
         
     
-            var tile_layer_128dffedb3725edc5fcecd05fd2e04d3 = L.tileLayer(
+            var tile_layer_6d51038e6fe1d8caa4c8d87323c8868f = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -119,36 +120,47 @@
             );
         
     
-            tile_layer_128dffedb3725edc5fcecd05fd2e04d3.addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
+            tile_layer_6d51038e6fe1d8caa4c8d87323c8868f.addTo(map_6b4d054e3ac2b360331f246937ba2d62);
         
     
-            var marker_b254119407a03bf25e27e1537828d081 = L.marker(
-                [41.168099, -8.660285],
+            var marker_6e75796fb1f6d5d8c90719544097a549 = L.marker(
+                [41.164887, -8.659536],
                 {
 }
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
+            ).addTo(map_6b4d054e3ac2b360331f246937ba2d62);
         
     
-        var popup_f3862c6e0605df29184b841465022f22 = L.popup({
-  "maxWidth": "100%",
+            var icon_b836cc463eac656749f9e470d00b4782 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ca67cebe2e56016b7c0eb46aebfdde3 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_29ca6dc9c3a80e7abcaebd21e793e719 = $(`<div id="html_29ca6dc9c3a80e7abcaebd21e793e719" style="width: 100.0%; height: 100.0%;">ICAO: 49526d<br>Voo: RZO9239<br>Altitude: 1350 ft</div>`)[0];
-                popup_f3862c6e0605df29184b841465022f22.setContent(html_29ca6dc9c3a80e7abcaebd21e793e719);
+                var html_dfb4a0a2be10dff32d3664e3b6908ba2 = $(`<div id="html_dfb4a0a2be10dff32d3664e3b6908ba2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">             <b>ICAO:</b> 486804<br>             <b>Voo:</b> KLM45J<br>             <b>Altitude:</b> 1325 ft<br>             <b>Velocidade:</b> 145 kt<br>             <b>Rumo:</b> 350°         </div>         </div>`)[0];
+                popup_9ca67cebe2e56016b7c0eb46aebfdde3.setContent(html_dfb4a0a2be10dff32d3664e3b6908ba2);
             
         
 
-        marker_b254119407a03bf25e27e1537828d081.bindPopup(popup_f3862c6e0605df29184b841465022f22)
+        marker_6e75796fb1f6d5d8c90719544097a549.bindPopup(popup_9ca67cebe2e56016b7c0eb46aebfdde3)
         ;
 
         
     
     
-            marker_b254119407a03bf25e27e1537828d081.bindTooltip(
+            marker_6e75796fb1f6d5d8c90719544097a549.bindTooltip(
                 `<div>
-                     49526d (RZO9239)
+                     486804 (KLM45J)
                  </div>`,
                 {
   "sticky": true,
@@ -156,33 +168,47 @@
             );
         
     
-            var marker_7989242c688c105cf453a6a0142a3771 = L.marker(
-                [41.669083, -8.558162],
+                marker_6e75796fb1f6d5d8c90719544097a549.setIcon(icon_b836cc463eac656749f9e470d00b4782);
+            
+    
+            var marker_59f3f8f2fbbd106eace7a64926e74909 = L.marker(
+                [41.210815, -8.444214],
                 {
 }
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
+            ).addTo(map_6b4d054e3ac2b360331f246937ba2d62);
         
     
-        var popup_a12b39ddc145b845f2c0a9c09dd04029 = L.popup({
-  "maxWidth": "100%",
+            var icon_6d6deda81290c963faec0b4e9f19450e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dffc779c45e250f8f0345521456e484 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_0a199ac7aa0cec049eb275480e3e8782 = $(`<div id="html_0a199ac7aa0cec049eb275480e3e8782" style="width: 100.0%; height: 100.0%;">ICAO: 405631<br>Voo: EZY72EB<br>Altitude: 36000 ft</div>`)[0];
-                popup_a12b39ddc145b845f2c0a9c09dd04029.setContent(html_0a199ac7aa0cec049eb275480e3e8782);
+                var html_f274b1c9660f9606348d0607d59510cd = $(`<div id="html_f274b1c9660f9606348d0607d59510cd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">             <b>ICAO:</b> 4ca910<br>             <b>Voo:</b> RYR41KX<br>             <b>Altitude:</b> 6275 ft<br>             <b>Velocidade:</b> 284 kt<br>             <b>Rumo:</b> 204°         </div>         </div>`)[0];
+                popup_1dffc779c45e250f8f0345521456e484.setContent(html_f274b1c9660f9606348d0607d59510cd);
             
         
 
-        marker_7989242c688c105cf453a6a0142a3771.bindPopup(popup_a12b39ddc145b845f2c0a9c09dd04029)
+        marker_59f3f8f2fbbd106eace7a64926e74909.bindPopup(popup_1dffc779c45e250f8f0345521456e484)
         ;
 
         
     
     
-            marker_7989242c688c105cf453a6a0142a3771.bindTooltip(
+            marker_59f3f8f2fbbd106eace7a64926e74909.bindTooltip(
                 `<div>
-                     405631 (EZY72EB)
+                     4ca910 (RYR41KX)
                  </div>`,
                 {
   "sticky": true,
@@ -190,242 +216,7 @@
             );
         
     
-            var marker_73265d05ad66e26f324aead7039e2725 = L.marker(
-                [41.244538, -8.740373],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_cbc7c9bed3cc07bdae1ec6f0b7c1567d = L.popup({
-  "maxWidth": "100%",
-});
-
-        
+                marker_59f3f8f2fbbd106eace7a64926e74909.setIcon(icon_6d6deda81290c963faec0b4e9f19450e);
             
-                var html_ac543e4aafe909cd553481494dd8f7fe = $(`<div id="html_ac543e4aafe909cd553481494dd8f7fe" style="width: 100.0%; height: 100.0%;">ICAO: 40753f<br>Voo: EXS14GN<br>Altitude: 37000 ft</div>`)[0];
-                popup_cbc7c9bed3cc07bdae1ec6f0b7c1567d.setContent(html_ac543e4aafe909cd553481494dd8f7fe);
-            
-        
-
-        marker_73265d05ad66e26f324aead7039e2725.bindPopup(popup_cbc7c9bed3cc07bdae1ec6f0b7c1567d)
-        ;
-
-        
-    
-    
-            marker_73265d05ad66e26f324aead7039e2725.bindTooltip(
-                `<div>
-                     40753f (EXS14GN)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_885a2e471804674312329a6b8f396f09 = L.marker(
-                [41.74411, -8.535565],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_2d46f22afe931b51293be0354b620214 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_29b50b4af7088b9eeab4cf78dd76abaf = $(`<div id="html_29b50b4af7088b9eeab4cf78dd76abaf" style="width: 100.0%; height: 100.0%;">ICAO: 40631a<br>Voo: EZY78YE<br>Altitude: 38025 ft</div>`)[0];
-                popup_2d46f22afe931b51293be0354b620214.setContent(html_29b50b4af7088b9eeab4cf78dd76abaf);
-            
-        
-
-        marker_885a2e471804674312329a6b8f396f09.bindPopup(popup_2d46f22afe931b51293be0354b620214)
-        ;
-
-        
-    
-    
-            marker_885a2e471804674312329a6b8f396f09.bindTooltip(
-                `<div>
-                     40631a (EZY78YE)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_a18b742fe6fe3d0cf0992a6430dd49e5 = L.marker(
-                [41.386895, -8.173637],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_dd060ac1c793cb960a0eaed2a274bd81 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_b2aa6b0961af213f7c22b07fa66ee31e = $(`<div id="html_b2aa6b0961af213f7c22b07fa66ee31e" style="width: 100.0%; height: 100.0%;">ICAO: 40717a<br>Voo: EXS15AS<br>Altitude: 35000 ft</div>`)[0];
-                popup_dd060ac1c793cb960a0eaed2a274bd81.setContent(html_b2aa6b0961af213f7c22b07fa66ee31e);
-            
-        
-
-        marker_a18b742fe6fe3d0cf0992a6430dd49e5.bindPopup(popup_dd060ac1c793cb960a0eaed2a274bd81)
-        ;
-
-        
-    
-    
-            marker_a18b742fe6fe3d0cf0992a6430dd49e5.bindTooltip(
-                `<div>
-                     40717a (EXS15AS)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_35e7694f0ac3b4d6d22e1d12ff4988b3 = L.marker(
-                [41.412778, -8.48004],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_91769c7b94b356ad4c5b5ef2b3b273d3 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_203ca264875930c613f4760789510787 = $(`<div id="html_203ca264875930c613f4760789510787" style="width: 100.0%; height: 100.0%;">ICAO: 344459<br>Voo: AEA37KG<br>Altitude: 11075 ft</div>`)[0];
-                popup_91769c7b94b356ad4c5b5ef2b3b273d3.setContent(html_203ca264875930c613f4760789510787);
-            
-        
-
-        marker_35e7694f0ac3b4d6d22e1d12ff4988b3.bindPopup(popup_91769c7b94b356ad4c5b5ef2b3b273d3)
-        ;
-
-        
-    
-    
-            marker_35e7694f0ac3b4d6d22e1d12ff4988b3.bindTooltip(
-                `<div>
-                     344459 (AEA37KG)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_cd6160003e5ea36bf6b186d87513f683 = L.marker(
-                [41.84292, -8.104333],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_dd0da5370a2d7f61373364fb01695714 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_9ec0f9c1c27814b67522310b87ab0324 = $(`<div id="html_9ec0f9c1c27814b67522310b87ab0324" style="width: 100.0%; height: 100.0%;">ICAO: 407f7d<br>Voo: EXS2RD<br>Altitude: 37000 ft</div>`)[0];
-                popup_dd0da5370a2d7f61373364fb01695714.setContent(html_9ec0f9c1c27814b67522310b87ab0324);
-            
-        
-
-        marker_cd6160003e5ea36bf6b186d87513f683.bindPopup(popup_dd0da5370a2d7f61373364fb01695714)
-        ;
-
-        
-    
-    
-            marker_cd6160003e5ea36bf6b186d87513f683.bindTooltip(
-                `<div>
-                     407f7d (EXS2RD)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_c17a10dd8f7fcf0f55d92ff0c89a5875 = L.marker(
-                [41.864182, -8.615466],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_e9ce2e6c0ce7abad3eccc6a85991e565 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_8f1c8a449af53bf789584633b259390f = $(`<div id="html_8f1c8a449af53bf789584633b259390f" style="width: 100.0%; height: 100.0%;">ICAO: 392af4<br>Voo: AFR1529<br>Altitude: 17225 ft</div>`)[0];
-                popup_e9ce2e6c0ce7abad3eccc6a85991e565.setContent(html_8f1c8a449af53bf789584633b259390f);
-            
-        
-
-        marker_c17a10dd8f7fcf0f55d92ff0c89a5875.bindPopup(popup_e9ce2e6c0ce7abad3eccc6a85991e565)
-        ;
-
-        
-    
-    
-            marker_c17a10dd8f7fcf0f55d92ff0c89a5875.bindTooltip(
-                `<div>
-                     392af4 (AFR1529)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_d8ec2f242900542b2c9a15c0ba80f0ac = L.marker(
-                [41.143478, -8.419373],
-                {
-}
-            ).addTo(map_08147524b7a468e5687f6dcdbf2d41fe);
-        
-    
-        var popup_2c754c39e383adde270bdd568a1d18ee = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_109997bd35f5bb028d645c8d28850b1a = $(`<div id="html_109997bd35f5bb028d645c8d28850b1a" style="width: 100.0%; height: 100.0%;">ICAO: 40643a<br>Voo: EZY86XQ<br>Altitude: 7775 ft</div>`)[0];
-                popup_2c754c39e383adde270bdd568a1d18ee.setContent(html_109997bd35f5bb028d645c8d28850b1a);
-            
-        
-
-        marker_d8ec2f242900542b2c9a15c0ba80f0ac.bindPopup(popup_2c754c39e383adde270bdd568a1d18ee)
-        ;
-
-        
-    
-    
-            marker_d8ec2f242900542b2c9a15c0ba80f0ac.bindTooltip(
-                `<div>
-                     40643a (EZY86XQ)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
 </script>
 </html>

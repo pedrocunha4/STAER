@@ -1,0 +1,104 @@
+{
+  "now": 1764066194.4,
+  "messages": 40292981,
+  "aircraft": [
+    {
+      "hex": "4070ea",
+      "squawk": "7570",
+      "flight": "EXS1883 ",
+      "altitude": 37000,
+      "vert_rate": 0,
+      "track": 207,
+      "speed": 475,
+      "category": "A3",
+      "mlat": [],
+      "tisb": [],
+      "messages": 20,
+      "seen": 37.7,
+      "rssi": -34.7
+    },
+    {
+      "hex": "486804",
+      "squawk": "3701",
+      "flight": "KLM45J  ",
+      "lat": 41.164887,
+      "lon": -8.659536,
+      "nucp": 7,
+      "seen_pos": 0.7,
+      "altitude": 1325,
+      "vert_rate": -896,
+      "track": 350,
+      "speed": 145,
+      "category": "A3",
+      "mlat": [],
+      "tisb": [],
+      "messages": 219,
+      "seen": 0.3,
+      "rssi": -28.8
+    },
+    {
+      "hex": "4952d0",
+      "altitude": "ground",
+      "track": 168,
+      "speed": 8,
+      "mlat": [],
+      "tisb": [],
+      "messages": 6,
+      "seen": 66.8,
+      "rssi": -35.5
+    },
+    {
+      "hex": "491496",
+      "mlat": [],
+      "tisb": [],
+      "messages": 460,
+      "seen": 210.3,
+      "rssi": -29.9
+    },
+    {
+      "hex": "4ca910",
+      "squawk": "0565",
+      "flight": "RYR41KX ",
+      "lat": 41.210815,
+      "lon": -8.444214,
+      "nucp": 7,
+      "seen_pos": 7.4,
+      "altitude": 6275,
+      "vert_rate": -640,
+      "track": 204,
+      "speed": 284,
+      "category": "A3",
+      "mlat": [],
+      "tisb": [],
+      "messages": 811,
+      "seen": 0.9,
+      "rssi": -32.5
+    },
+    {
+      "hex": "440d6f",
+      "mlat": [],
+      "tisb": [],
+      "messages": 1359,
+      "seen": 255.8,
+      "rssi": -32.9
+    },
+    {
+      "hex": "49106f",
+      "mlat": [],
+      "tisb": [],
+      "messages": 899,
+      "seen": 139.8,
+      "rssi": -32.6
+    },
+    {
+      "hex": "49004b",
+      "altitude": "ground",
+      "speed": 0,
+      "mlat": [],
+      "tisb": [],
+      "messages": 6429,
+      "seen": 15.2,
+      "rssi": -34.7
+    }
+  ]
+}
