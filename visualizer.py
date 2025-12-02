@@ -3,6 +3,42 @@ from branca.element import MacroElement
 from jinja2 import Template
 from datetime import datetime
 
+# Mapeamento simples prefixo do voo -> (nome do país, código ISO2 da bandeira)
+AIRLINE_COUNTRY = {
+    # Portugal
+    "TAP": ("Portugal", "pt"),
+    "RTV": ("Portugal", "pt"),
+
+    # EasyJet Europe (Áustria)
+    "EJU": ("Austria", "at"),
+
+    # EasyJet UK (Reino Unido) – caso apareça EZY
+    "EZY": ("United Kingdom", "gb"),
+
+    # Delta Airlines
+    "DAL": ("United States", "us"),
+
+    # Jet2 / Jet2Holidays
+    "EXS": ("United Kingdom", "gb"),
+    "TOM": ("United Kingdom", "gb"),
+
+    # Suécia (parece o caso da última linha 🇸🇪)
+    "SAS": ("Sweden", "se"),
+    # caso seja um voo charter sueco: SCW (Air Leap Sweden)
+    "SCW": ("Sweden", "se"),
+    "SWR": ("Switzerland", "ch"),
+}
+
+def get_flag_for_flight(flight: str | None):
+    """
+    A partir do código de voo (ex.: TAP1924) tenta obter
+    o país e o código de bandeira (ISO2) com base no prefixo.
+    """
+    if not flight:
+        return None, None
+
+    prefix = flight.strip().upper()[:3]
+    return AIRLINE_COUNTRY.get(prefix, (None, None))
 
 class AircraftCounter(MacroElement):
     def __init__(self, with_pos, total, timestamp):
@@ -99,20 +135,56 @@ def generate_map(aircraft_list):
         speed = ac.get("gs") or ac.get("speed")  # normalmente 'gs' em dump1090
         track = ac.get("track")
 
-              # Popup detalhado (versão formatada e bonita)
+        # Strings tratadas
         flight_str = flight if flight else "N/A"
         speed_str = f"{int(speed)} kt" if speed is not None else "N/A"
         track_str = f"{int(track)}°" if track is not None else "N/A"
 
+        # Bandeira com base no prefixo do voo
+        country_name, country_code = get_flag_for_flight(flight)
+        flag_html = ""
+        if country_code:
+            flag_html = (
+                f'<img src="https://flagcdn.com/24x18/{country_code}.png" '
+                f'style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" '
+                f'alt="{country_name}">'
+            )
+
+        # Popup com layout mais moderno
         popup_html = f"""
-        <div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">
-            <b>ICAO:</b> {icao}<br>
-            <b>Voo:</b> {flight_str}<br>
-            <b>Altitude:</b> {altitude_str}<br>
-            <b>Velocidade:</b> {speed_str}<br>
-            <b>Rumo:</b> {track_str}
+        <div style="
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            min-width: 190px;
+        ">
+          <!-- Cabeçalho: bandeira + voo -->
+          <div style="display: flex; align-items: center; margin-bottom: 6px;">
+            {flag_html}
+            <div>
+              <div style="font-size: 13px; font-weight: bold;">{flight_str}</div>
+              <div style="font-size: 11px; color: #666;">ICAO: {icao}</div>
+            </div>
+          </div>
+
+          <!-- Tabela de dados -->
+          <table style="border-collapse: collapse; width: 100%; font-size: 11px;">
+            <tr>
+              <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>
+              <td style="padding: 2px 0;">{altitude_str}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>
+              <td style="padding: 2px 0;">{speed_str}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>
+              <td style="padding: 2px 0 0 0;">{track_str}</td>
+            </tr>
+          </table>
         </div>
         """
+
 
         # Cor do marcador em função da altitude
         if altitude is None:
@@ -124,7 +196,7 @@ def generate_map(aircraft_list):
         else:
             icon_color = "red"
 
-        # Marcador com ícone de avião e popup formatado
+        # Marcador no mapa
         folium.Marker(
             [lat, lon],
             tooltip=f"{icao} {('(' + flight + ')') if flight else ''}",

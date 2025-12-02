@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6b4d054e3ac2b360331f246937ba2d62 {
+                #map_2212d7b6d26f67a19ec6186c72d16947 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,7 +54,7 @@
 <body>
     
     
-            <div class="folium-map" id="map_6b4d054e3ac2b360331f246937ba2d62" ></div>
+            <div class="folium-map" id="map_2212d7b6d26f67a19ec6186c72d16947" ></div>
         
     
         <div style="
@@ -69,9 +69,9 @@
             font-size: 13px;
             box-shadow: 0 0 4px rgba(0,0,0,0.3);
         ">
-            Aviões com posição: 2<br>
-            Total no JSON: 8<br>
-            Última atualização: 10:23:15 UTC
+            Aviões com posição: 11<br>
+            Total no JSON: 18<br>
+            Última atualização: 10:55:14 UTC
         </div>
         
     
@@ -85,8 +85,8 @@
 <script>
     
     
-            var map_6b4d054e3ac2b360331f246937ba2d62 = L.map(
-                "map_6b4d054e3ac2b360331f246937ba2d62",
+            var map_2212d7b6d26f67a19ec6186c72d16947 = L.map(
+                "map_2212d7b6d26f67a19ec6186c72d16947",
                 {
                     center: [41.1579, -8.6291],
                     crs: L.CRS.EPSG3857,
@@ -103,7 +103,7 @@
 
         
     
-            var tile_layer_6d51038e6fe1d8caa4c8d87323c8868f = L.tileLayer(
+            var tile_layer_f2ba28b805df953ced8ab42ce2e68191 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -120,19 +120,19 @@
             );
         
     
-            tile_layer_6d51038e6fe1d8caa4c8d87323c8868f.addTo(map_6b4d054e3ac2b360331f246937ba2d62);
+            tile_layer_f2ba28b805df953ced8ab42ce2e68191.addTo(map_2212d7b6d26f67a19ec6186c72d16947);
         
     
-            var marker_6e75796fb1f6d5d8c90719544097a549 = L.marker(
-                [41.164887, -8.659536],
+            var marker_a2b215de719eb7748d2003f2e1ba6bf1 = L.marker(
+                [42.008786, -10.640642],
                 {
 }
-            ).addTo(map_6b4d054e3ac2b360331f246937ba2d62);
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
         
     
-            var icon_b836cc463eac656749f9e470d00b4782 = L.AwesomeMarkers.icon(
+            var icon_c8b9688ec4eb3e7756528d367cc61eda = L.AwesomeMarkers.icon(
                 {
-  "markerColor": "green",
+  "markerColor": "red",
   "iconColor": "white",
   "icon": "plane",
   "prefix": "fa",
@@ -141,26 +141,26 @@
             );
         
     
-        var popup_9ca67cebe2e56016b7c0eb46aebfdde3 = L.popup({
+        var popup_bc18254dcbf54ae96be55dcd53b36fa5 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_dfb4a0a2be10dff32d3664e3b6908ba2 = $(`<div id="html_dfb4a0a2be10dff32d3664e3b6908ba2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">             <b>ICAO:</b> 486804<br>             <b>Voo:</b> KLM45J<br>             <b>Altitude:</b> 1325 ft<br>             <b>Velocidade:</b> 145 kt<br>             <b>Rumo:</b> 350°         </div>         </div>`)[0];
-                popup_9ca67cebe2e56016b7c0eb46aebfdde3.setContent(html_dfb4a0a2be10dff32d3664e3b6908ba2);
+                var html_7f1ca37d52417e8e72bb6a8ed4457cac = $(`<div id="html_7f1ca37d52417e8e72bb6a8ed4457cac" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">                          <div>               <div style="font-size: 13px; font-weight: bold;">AEA098</div>               <div style="font-size: 11px; color: #666;">ICAO: 347692</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">37000 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">553 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">102°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_bc18254dcbf54ae96be55dcd53b36fa5.setContent(html_7f1ca37d52417e8e72bb6a8ed4457cac);
             
         
 
-        marker_6e75796fb1f6d5d8c90719544097a549.bindPopup(popup_9ca67cebe2e56016b7c0eb46aebfdde3)
+        marker_a2b215de719eb7748d2003f2e1ba6bf1.bindPopup(popup_bc18254dcbf54ae96be55dcd53b36fa5)
         ;
 
         
     
     
-            marker_6e75796fb1f6d5d8c90719544097a549.bindTooltip(
+            marker_a2b215de719eb7748d2003f2e1ba6bf1.bindTooltip(
                 `<div>
-                     486804 (KLM45J)
+                     347692 (AEA098)
                  </div>`,
                 {
   "sticky": true,
@@ -168,17 +168,113 @@
             );
         
     
-                marker_6e75796fb1f6d5d8c90719544097a549.setIcon(icon_b836cc463eac656749f9e470d00b4782);
+                marker_a2b215de719eb7748d2003f2e1ba6bf1.setIcon(icon_c8b9688ec4eb3e7756528d367cc61eda);
             
     
-            var marker_59f3f8f2fbbd106eace7a64926e74909 = L.marker(
-                [41.210815, -8.444214],
+            var marker_1b7bd7b92c94a3c99ad02d64d83178c5 = L.marker(
+                [41.930764, -9.423715],
                 {
 }
-            ).addTo(map_6b4d054e3ac2b360331f246937ba2d62);
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
         
     
-            var icon_6d6deda81290c963faec0b4e9f19450e = L.AwesomeMarkers.icon(
+            var icon_cf0f055529e14b30e7a04ab2d5c6be69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b4d3cf666445db1661841687b0d8550 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a255e29cf6c368f313d7117cd36e0090 = $(`<div id="html_a255e29cf6c368f313d7117cd36e0090" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/gb.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="United Kingdom">             <div>               <div style="font-size: 13px; font-weight: bold;">TOM6BD</div>               <div style="font-size: 11px; color: #666;">ICAO: 407739</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">37000 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">426 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">216°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_8b4d3cf666445db1661841687b0d8550.setContent(html_a255e29cf6c368f313d7117cd36e0090);
+            
+        
+
+        marker_1b7bd7b92c94a3c99ad02d64d83178c5.bindPopup(popup_8b4d3cf666445db1661841687b0d8550)
+        ;
+
+        
+    
+    
+            marker_1b7bd7b92c94a3c99ad02d64d83178c5.bindTooltip(
+                `<div>
+                     407739 (TOM6BD)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b7bd7b92c94a3c99ad02d64d83178c5.setIcon(icon_cf0f055529e14b30e7a04ab2d5c6be69);
+            
+    
+            var marker_880d9d3afae25c63880c9c50cbb12a89 = L.marker(
+                [41.661553, -7.97007],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_192cf7fb571d35e230c0df7e37cb48ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5c14cde7dafcc7401b07d8069d04340 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21c6ba4be779edadc103073b535a4b26 = $(`<div id="html_21c6ba4be779edadc103073b535a4b26" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">                          <div>               <div style="font-size: 13px; font-weight: bold;">SWR9CK</div>               <div style="font-size: 11px; color: #666;">ICAO: 4b194c</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">22625 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">273 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">263°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_f5c14cde7dafcc7401b07d8069d04340.setContent(html_21c6ba4be779edadc103073b535a4b26);
+            
+        
+
+        marker_880d9d3afae25c63880c9c50cbb12a89.bindPopup(popup_f5c14cde7dafcc7401b07d8069d04340)
+        ;
+
+        
+    
+    
+            marker_880d9d3afae25c63880c9c50cbb12a89.bindTooltip(
+                `<div>
+                     4b194c (SWR9CK)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_880d9d3afae25c63880c9c50cbb12a89.setIcon(icon_192cf7fb571d35e230c0df7e37cb48ef);
+            
+    
+            var marker_90c864f869fa4b85e51a77f6b7e3d0f7 = L.marker(
+                [41.503464, -9.033321],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_5dfcdcb885c3ca6a55f8df5fd2ee35e1 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -189,26 +285,26 @@
             );
         
     
-        var popup_1dffc779c45e250f8f0345521456e484 = L.popup({
+        var popup_8407b0b689004d31de86aa290beb3a72 = L.popup({
   "maxWidth": 250,
 });
 
         
             
-                var html_f274b1c9660f9606348d0607d59510cd = $(`<div id="html_f274b1c9660f9606348d0607d59510cd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4;">             <b>ICAO:</b> 4ca910<br>             <b>Voo:</b> RYR41KX<br>             <b>Altitude:</b> 6275 ft<br>             <b>Velocidade:</b> 284 kt<br>             <b>Rumo:</b> 204°         </div>         </div>`)[0];
-                popup_1dffc779c45e250f8f0345521456e484.setContent(html_f274b1c9660f9606348d0607d59510cd);
+                var html_a8fa388a42db2abf41eb6d385296d741 = $(`<div id="html_a8fa388a42db2abf41eb6d385296d741" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">                          <div>               <div style="font-size: 13px; font-weight: bold;">RZO184</div>               <div style="font-size: 11px; color: #666;">ICAO: 495267</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">6175 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">251 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">46°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_8407b0b689004d31de86aa290beb3a72.setContent(html_a8fa388a42db2abf41eb6d385296d741);
             
         
 
-        marker_59f3f8f2fbbd106eace7a64926e74909.bindPopup(popup_1dffc779c45e250f8f0345521456e484)
+        marker_90c864f869fa4b85e51a77f6b7e3d0f7.bindPopup(popup_8407b0b689004d31de86aa290beb3a72)
         ;
 
         
     
     
-            marker_59f3f8f2fbbd106eace7a64926e74909.bindTooltip(
+            marker_90c864f869fa4b85e51a77f6b7e3d0f7.bindTooltip(
                 `<div>
-                     4ca910 (RYR41KX)
+                     495267 (RZO184)
                  </div>`,
                 {
   "sticky": true,
@@ -216,7 +312,343 @@
             );
         
     
-                marker_59f3f8f2fbbd106eace7a64926e74909.setIcon(icon_6d6deda81290c963faec0b4e9f19450e);
+                marker_90c864f869fa4b85e51a77f6b7e3d0f7.setIcon(icon_5dfcdcb885c3ca6a55f8df5fd2ee35e1);
+            
+    
+            var marker_cb9e99efd972a1fab98c4fe8aced4e59 = L.marker(
+                [42.794215, -10.488303],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_4cb972809e8e5306690888867984050e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c5d651cbba6ace5cea186baa21bcf51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24bc0ab58211e0297bce1a8db3c99801 = $(`<div id="html_24bc0ab58211e0297bce1a8db3c99801" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">                          <div>               <div style="font-size: 13px; font-weight: bold;">N/A</div>               <div style="font-size: 11px; color: #666;">ICAO: 4ac9c5</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">37000 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">N/A</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">N/A</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_5c5d651cbba6ace5cea186baa21bcf51.setContent(html_24bc0ab58211e0297bce1a8db3c99801);
+            
+        
+
+        marker_cb9e99efd972a1fab98c4fe8aced4e59.bindPopup(popup_5c5d651cbba6ace5cea186baa21bcf51)
+        ;
+
+        
+    
+    
+            marker_cb9e99efd972a1fab98c4fe8aced4e59.bindTooltip(
+                `<div>
+                     4ac9c5 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb9e99efd972a1fab98c4fe8aced4e59.setIcon(icon_4cb972809e8e5306690888867984050e);
+            
+    
+            var marker_d63308c11268fc5144f1368529d2a649 = L.marker(
+                [41.685574, -8.217454],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_66eb860ac095a907a0509098102b36de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2237739e60058700c29425ad697775c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8fba28de571cc070a0292d1f787f28a4 = $(`<div id="html_8fba28de571cc070a0292d1f787f28a4" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/at.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="Austria">             <div>               <div style="font-size: 13px; font-weight: bold;">EJU57AM</div>               <div style="font-size: 11px; color: #666;">ICAO: 440452</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">13525 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">244 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">282°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_c2237739e60058700c29425ad697775c.setContent(html_8fba28de571cc070a0292d1f787f28a4);
+            
+        
+
+        marker_d63308c11268fc5144f1368529d2a649.bindPopup(popup_c2237739e60058700c29425ad697775c)
+        ;
+
+        
+    
+    
+            marker_d63308c11268fc5144f1368529d2a649.bindTooltip(
+                `<div>
+                     440452 (EJU57AM)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d63308c11268fc5144f1368529d2a649.setIcon(icon_66eb860ac095a907a0509098102b36de);
+            
+    
+            var marker_cfb21a36880b254aed8288ed658aa57a = L.marker(
+                [41.6886, -8.034391],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_00fa1c1bf8da814f4828ee131d75fb33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85db0e6d862d834244a9b139bae8f318 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b6d5bd2cd3233550ece68a8f59a897e5 = $(`<div id="html_b6d5bd2cd3233550ece68a8f59a897e5" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/gb.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="United Kingdom">             <div>               <div style="font-size: 13px; font-weight: bold;">EXS56PS</div>               <div style="font-size: 11px; color: #666;">ICAO: 4070e3</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">37000 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">438 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">192°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_85db0e6d862d834244a9b139bae8f318.setContent(html_b6d5bd2cd3233550ece68a8f59a897e5);
+            
+        
+
+        marker_cfb21a36880b254aed8288ed658aa57a.bindPopup(popup_85db0e6d862d834244a9b139bae8f318)
+        ;
+
+        
+    
+    
+            marker_cfb21a36880b254aed8288ed658aa57a.bindTooltip(
+                `<div>
+                     4070e3 (EXS56PS)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfb21a36880b254aed8288ed658aa57a.setIcon(icon_00fa1c1bf8da814f4828ee131d75fb33);
+            
+    
+            var marker_5d51922e7b11b96f97b990ebe3004a2f = L.marker(
+                [41.528879, -8.640236],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_0711e537b40f2abe130f1a944464221c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_484a28d15aabd5069a17b97a95897e34 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b9f0cad200a5b1692f89ff60e83e2c4 = $(`<div id="html_7b9f0cad200a5b1692f89ff60e83e2c4" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/at.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="Austria">             <div>               <div style="font-size: 13px; font-weight: bold;">EJU48DN</div>               <div style="font-size: 11px; color: #666;">ICAO: 440047</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">5125 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">259 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">264°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_484a28d15aabd5069a17b97a95897e34.setContent(html_7b9f0cad200a5b1692f89ff60e83e2c4);
+            
+        
+
+        marker_5d51922e7b11b96f97b990ebe3004a2f.bindPopup(popup_484a28d15aabd5069a17b97a95897e34)
+        ;
+
+        
+    
+    
+            marker_5d51922e7b11b96f97b990ebe3004a2f.bindTooltip(
+                `<div>
+                     440047 (EJU48DN)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d51922e7b11b96f97b990ebe3004a2f.setIcon(icon_0711e537b40f2abe130f1a944464221c);
+            
+    
+            var marker_0efe41cb31733f45665211046f0dbeb8 = L.marker(
+                [41.596115, -9.462662],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_daf01d20cc959b6b8a9a9b772df7408b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40da8c00af6cbc9523dd005107ea1e3d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce037a08db65865299b59860094e4bbc = $(`<div id="html_ce037a08db65865299b59860094e4bbc" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/us.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="United States">             <div>               <div style="font-size: 13px; font-weight: bold;">DAL127</div>               <div style="font-size: 11px; color: #666;">ICAO: ab9387</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">32000 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">414 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">278°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_40da8c00af6cbc9523dd005107ea1e3d.setContent(html_ce037a08db65865299b59860094e4bbc);
+            
+        
+
+        marker_0efe41cb31733f45665211046f0dbeb8.bindPopup(popup_40da8c00af6cbc9523dd005107ea1e3d)
+        ;
+
+        
+    
+    
+            marker_0efe41cb31733f45665211046f0dbeb8.bindTooltip(
+                `<div>
+                     ab9387 (DAL127)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0efe41cb31733f45665211046f0dbeb8.setIcon(icon_daf01d20cc959b6b8a9a9b772df7408b);
+            
+    
+            var marker_ea88a25ee7f5d40ced5f5ea01bbb7a7c = L.marker(
+                [41.66658, -8.29027],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_2c0845bc9b1a5238d016d4ba97c92b19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39c38fdc1f9774f496c5139e67c60119 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a42317a846290c1fecb520c2a6d3d6b = $(`<div id="html_3a42317a846290c1fecb520c2a6d3d6b" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/at.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="Austria">             <div>               <div style="font-size: 13px; font-weight: bold;">EJU34YP</div>               <div style="font-size: 11px; color: #666;">ICAO: 440cc1</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">16700 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">248 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">211°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_39c38fdc1f9774f496c5139e67c60119.setContent(html_3a42317a846290c1fecb520c2a6d3d6b);
+            
+        
+
+        marker_ea88a25ee7f5d40ced5f5ea01bbb7a7c.bindPopup(popup_39c38fdc1f9774f496c5139e67c60119)
+        ;
+
+        
+    
+    
+            marker_ea88a25ee7f5d40ced5f5ea01bbb7a7c.bindTooltip(
+                `<div>
+                     440cc1 (EJU34YP)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea88a25ee7f5d40ced5f5ea01bbb7a7c.setIcon(icon_2c0845bc9b1a5238d016d4ba97c92b19);
+            
+    
+            var marker_d8f5276a4e3b5b9268b6348656610554 = L.marker(
+                [41.392685, -8.719274],
+                {
+}
+            ).addTo(map_2212d7b6d26f67a19ec6186c72d16947);
+        
+    
+            var icon_b92777b069520a2a35a2f4fb766eae4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d016ba223c528ecf6dffdd814ef23fc9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9ba5c27ce283932bf6e4507d8b6b9da2 = $(`<div id="html_9ba5c27ce283932bf6e4507d8b6b9da2" style="width: 100.0%; height: 100.0%;">         <div style="             font-family: Arial, sans-serif;             font-size: 12px;             line-height: 1.5;             min-width: 190px;         ">           <!-- Cabeçalho: bandeira + voo -->           <div style="display: flex; align-items: center; margin-bottom: 6px;">             <img src="https://flagcdn.com/24x18/at.png" style="vertical-align: middle; margin-right: 6px; border-radius: 2px;" alt="Austria">             <div>               <div style="font-size: 13px; font-weight: bold;">EJU48ZT</div>               <div style="font-size: 11px; color: #666;">ICAO: 440072</div>             </div>           </div>            <!-- Tabela de dados -->           <table style="border-collapse: collapse; width: 100%; font-size: 11px;">             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Altitude</td>               <td style="padding: 2px 0;">2425 ft</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 2px 0;">Velocidade</td>               <td style="padding: 2px 0;">178 kt</td>             </tr>             <tr>               <td style="font-weight: bold; padding: 2px 4px 0 0;">Rumo</td>               <td style="padding: 2px 0 0 0;">169°</td>             </tr>           </table>         </div>         </div>`)[0];
+                popup_d016ba223c528ecf6dffdd814ef23fc9.setContent(html_9ba5c27ce283932bf6e4507d8b6b9da2);
+            
+        
+
+        marker_d8f5276a4e3b5b9268b6348656610554.bindPopup(popup_d016ba223c528ecf6dffdd814ef23fc9)
+        ;
+
+        
+    
+    
+            marker_d8f5276a4e3b5b9268b6348656610554.bindTooltip(
+                `<div>
+                     440072 (EJU48ZT)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d8f5276a4e3b5b9268b6348656610554.setIcon(icon_b92777b069520a2a35a2f4fb766eae4c);
             
 </script>
 </html>
