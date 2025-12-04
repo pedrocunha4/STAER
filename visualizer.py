@@ -213,4 +213,5 @@ def generate_map(aircraft_list):
     # Refresh automático
     mapa.get_root().add_child(AutoRefresh(10))   # atualiza de 10 em 10 segundos
 
-    mapa.save("templates/map.html")
+    mapa.save("templates/map_inner.html")
+
